@@ -1,0 +1,132 @@
+.container {
+  width: 95vw;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 1.2rem 2.4rem;
+  box-sizing: 0rem 0rem 0.5rem 10rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container > .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > .info > h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.container > .info > button {
+  background-color: var(--secondary-color);
+  border: none;
+  outline: none;
+  border-radius: 1000rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.container > .info > button > .icon {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > .info > button > .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* table */
+.container > .wrapper {
+  overflow: auto;
+}
+.container > .wrapper > table {
+  width: 100%;
+  margin-top: 1rem;
+  border-spacing: 0 1.6rem;
+  border-collapse: separate;
+}
+
+.container > .wrapper > table th,
+.container > .wrapper > table td {
+  text-align: left;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  padding: 0.8rem 1.6rem;
+}
+
+.container > .wrapper > table th:nth-child(1) {
+  width: 25%;
+}
+.container > .wrapper > table th:nth-child(2) {
+  width: 25%;
+}
+.container > .wrapper > table th:nth-child(3) {
+  width: 30%;
+}
+.container > .wrapper > table th:nth-child(4) {
+  width: 10%;
+}
+.container > .wrapper > table th:nth-child(5) {
+  width: 10%;
+}
+.container > .wrapper > table > tbody tr {
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.5rem 0.3rem rgba(0, 0, 0, 0.05);
+}
+
+.container > .wrapper > table td:nth-child(3) {
+  color: #047aff;
+}
+
+.container > .wrapper > table td:nth-child(5) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.container > .wrapper > table > tbody > tr > td.error {
+  text-align: center;
+  color: var(--danger-color);
+}
+
+.container > .wrapper > table td:nth-child(5) button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > .wrapper > table td:nth-child(5) button:nth-child(1) {
+  color: var(--success-color);
+}
+.container > .wrapper > table td:nth-child(5) button:nth-child(2) {
+  color: var(--danger-color);
+}
+
+.container > .wrapper > table th:last-child,
+.container > .wrapper > table td:last-child {
+  text-align: right;
+}
