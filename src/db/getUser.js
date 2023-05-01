@@ -5,7 +5,6 @@ export const getUsers = async () => {
   const collectionReference = collection(db, "users");
   try {
     const docs = await getDocs(collectionReference);
-    console.log(docs);
     const users = docs.docs.map((doc) => ({
       ...doc.data(),
       id: doc.id,
